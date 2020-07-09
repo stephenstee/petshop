@@ -7,7 +7,8 @@ var passport = require("passport");
 var LocalStrategy = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose")
 
-mongoose.connect("mongodb://localhost/petshop", {useNewUrlParser:true, useUnifiedTopology:true});
+// mongoose.connect("mongodb://localhost/petshop", {useNewUrlParser:true, useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://stephen:stephen12051999@cluster0-w7qge.mongodb.net/<dbname>?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology:true});
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded ({extended:true}));
 
