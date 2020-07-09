@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<style>
+    body{
+        background-color: indigo;
+    }
+.button {
+  border-radius: 4px;
+  background-color: goldenrod;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 40px;
+  width: 200px;
+ 
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container-fluid">
+	<div>
+		<a class="btn btn-md btn-light" href="/logout">Logout</a>
+	</div>
+  <div class="row">
+<button class="button"><a href="/home/dogs"><span>DOGS </span></a></button>
+<button class="button"><a href="/home/cats"><span>CATS </span></a></button>
+
+<button class="button"><a href="/home/parrots"><span>PARROTS </span></a></button>
+
+
+<button class="button"><a href="/home/fish"><span>FISH</span></a></button>
+
+<button class="button"><a href="/home/rabbites"><span>RABBITS</span></a></button>
+<button class="button"><a href="/home/hamster"><span>HAMSTER</span></a></button>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: blueviolet;
+  color: white;
+  transform: rotateY(180deg);
+}
+body{
+    background-color: goldenrod;
+    text-align:start;
+}
+</style>
+</head>
+<body>
+   
+<h1>PARROTS</h1>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4" style="background-color:goldenrod;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://i.pinimg.com/564x/ec/53/65/ec5365ff1ffdee18c5494fad328182ed.jpg" alt="PARROTS" style="width:300px;height:500px;">
+            </div>
+            <div class="flip-card-back">
+              <h3>ABOUT:RAINBOW LORIKEET</h3>
+              <p>PRICE:Average $1200 - $2300 USD
+
+                Kittens that come from high-titled breeding lines can costs anywhere from $850 to $2,500, Prices will vary according to the breeder and the quality, age, and show record, if any, of the cat that you're considering.</p>
+              <h4>COLOR:Rainbow Multi color</h4> 
+            
+              <h4>LIFE SPAN:12 to 17 years</h4>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+
+<div class="col-sm-4" style="background-color:goldenrod;">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.pinimg.com/564x/cc/e5/0a/cce50a4dc2abe41c5c29431b252a7ebb.jpg" alt="PARROTS" style="width:300px;height:500px;">
+    </div>
+    <div class="flip-card-back">
+        <h3>ABOUT:ECLECTUS PARROT</h3>
+        <h3>OTHERNAMES:Highlander, Highland Straight, Britannica</h3>
+        <p>PRICE:	Average $1200 - $2300 USD</p>
+        <h4>COLOR:Green</h4> 
+    
+        <h4>LIFE SPAN:12 to 17 years</h4>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4" style="background-color:goldenrod;">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.pinimg.com/564x/8b/a5/fc/8ba5fc03161071d83387dae39a1f76f6.jpg" alt="PARROT" style="width:300px;height:500px;">
+    </div>
+    <div class="flip-card-back">
+        <h3>ABOUT:POWDER BLUE</h3>
+        <p>PRICE:Average $1300 - $3000 USD
+
+            We have all heard the old adage "you get what you pay for." Persian cats are purebred and are expensive for that reason. Depending on the breeder, type, and heritage. In America, prices for Persian kittens range from $800-$5000 depending on fur colour.</p>
+        <h4>COLOR:Powder Blue</h4> 
+        <h4>LIFE SPAN:12 to 17 years</h4>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

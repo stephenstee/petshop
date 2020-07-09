@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width:  50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  width:65%;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  width:35%;
+  background-color:goldenrod;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 200px;
+  border-radius: 30%;
+}
+</style>
+</head>
+<body>
+ <!--   The core Firebase JS SDK is always required and must be listed first -->
+<!-- <script src="/__/firebase/7.15.5/firebase-app.js"></script> -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use -->
+     <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- <script src="/__/firebase/7.15.5/firebase-analytics.js"></script> -->
+
+<!-- Initialize Firebase -->
+<!-- <script src="/__/firebase/init.js"></script> -->
+ <!-- --> -->
+<div class="split left">
+  <div class="centered">
+    <img src="https://image.shutterstock.com/image-vector/pet-shop-logo-template-600w-1053368123.jpg" alt="Avatar woman">
+
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <div class="d-flex justify-content-center form_container">
+        <form action="/login" method="POST">
+            <div class="input-group mb-3">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" name="username" class="form-control input_user" placeholder="username">
+            </div>
+            <div class="input-group mb-2">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" name="password" class="form-control input_pass"  placeholder="password">
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                    <label class="custom-control-label" for="customControlInline">Remember Password</label>
+                </div>
+            </div>
+			<div class="d-flex justify-content-center mt-3 login_container">
+        <button class="btn btn-primary">
+			Submit
+		</button>
+    </div>
+        </form>
+    </div>
+    
+    <div class="mt-4">
+        <div class="d-flex justify-content-center links">
+            Don't have an account? <a href="/register">Sign Up</a>
+        </div>
+        <div class="d-flex justify-content-cem]nter links">
+            <a href="/register">Forgot your password?</a>
+        </div>
+    </div>
+</div>
+   
+  </div>
+</div>
+     
+</body>
+</html> 
