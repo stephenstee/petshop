@@ -79,7 +79,7 @@ app.get("/home/login",function(req,res){
 
 app.post("/login",passport.authenticate("local",{
 	successRedirect: "/home/pets",
-	failureRedirect: "/login"
+	failureRedirect: "/home"
 	
 }),function(req,res){	
 });
